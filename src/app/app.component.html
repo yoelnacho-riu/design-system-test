@@ -1,35 +1,70 @@
 <app-main-header></app-main-header>
-<main class="o-container u-pv-x16">
-  <div class="u-mb-x6">
-    <h2 class="u-mb-x4">Page Title</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident
-      velit reiciendis blanditiis qui, iure sequi in! Aperiam error quibusdam
-      necessitatibus voluptatem neque possimus, facere, reiciendis consequatur
-      id tempore quas.
-    </p>
-  </div>
-  <div class="o-grid">
-    <ng-container *ngFor="let i of [1, 1, 1, 1]">
-      <!-- <div class="o-grid__col u-6/12@xs u-4/12@sm u-3/12@md u-mb-x6"> -->
-      <div class="o-grid__col u-mb-x3 u-1/4 u-1/6@xs u-1/8@sm">
-        <div class="u-size u-flex u-fd-col u-bgcolor-white">
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-s/1a/30/e5/aa/hotel-riu-vallarta.jpg"
-            alt=""
-            class="u-size img-cover"
-          />
-          <div class="u-p-x4">
-            <h5>Title</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              provident velit reiciendis blanditiis qui, iure sequi in! Aperiam
-              error quibusdam necessitatibus voluptatem neque possimus, facere,
-              reiciendis consequatur id tempore quas.
-            </p>
+<main class="u-pb-x10 u-pt-x32">
+  <section class="o-container">
+    <article class="u-mb-x12">
+      <h2 class="u-mb-x4">container 1280px</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident
+        velit reiciendis blanditiis qui, iure sequi in! Aperiam error quibusdam
+        necessitatibus voluptatem neque possimus, facere, reiciendis consequatur
+        id tempore quas.
+      </p>
+    </article>
+
+    <article *ngIf="true">
+      <h4 class="u-mb-x1">Eg: grid + breakpoint</h4>
+      <span class="u-mb-x8 u-block"
+        >1col (default) | 2col (xs) | 3col (sm) | 6col (md)</span
+      >
+      <div class="o-grid">
+        <ng-container *ngFor="let i of [1, 1, 1, 1, 1, 1]">
+          <div class="o-grid__col u-mb-x6 u-3/6@xs u-4/12@sm u-2/12@md">
+            <div class="u-size u-flex u-fd-col u-bgcolor-white">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/1a/30/e5/aa/hotel-riu-vallarta.jpg"
+                alt=""
+                class="u-size img-cover"
+              />
+              <div class="u-p-x4">
+                <h5>Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  provident velit reiciendis blanditiis qui, iure sequi in!
+                  Aperiam error quibusdam necessitatibus voluptatem neque
+                  possimus, facere, reiciendis consequatur id tempore quas.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
+        </ng-container>
       </div>
-    </ng-container>
-  </div>
+    </article>
+    <article>
+      <h4 class="u-mb-x1 u-mt-x6">Eg: grid</h4>
+      <span class="u-mb-x8 u-block">2 col (ever)</span>
+      <div class="o-grid">
+        <ng-container *ngFor="let i of [1, 1, 1, 1, 1, 1]">
+          <div class="o-grid__col u-mb-x6 u-2/4">
+            <div class="u-bgcolor-white">item</div>
+          </div>
+        </ng-container>
+      </div>
+    </article>
+  </section>
+  <section class="o-container o-container--fluid u-mt-x20">
+    <article class="u-mb-x6">
+      <h2 class="u-mb-x1">container fluid</h2>
+      <span class="u-mb-x8 u-block"
+        >1col (default) | 2col (xs) | 3col (sm) | 6col (md)</span
+      >
+      <div class="o-grid">
+        <ng-container *ngFor="let i of [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]">
+          <div class="o-grid__col u-mb-x6 u-4/4 u-3/6@xs u-4/12@sm u-1/12@md">
+            <div class="u-bgcolor-white">item</div>
+          </div>
+        </ng-container>
+      </div>
+    </article>
+  </section>
 </main>
+<app-main-footer></app-main-footer>

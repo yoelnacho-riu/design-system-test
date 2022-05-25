@@ -1,24 +1,39 @@
-<header class="u-text-center u-fixed u-width u-bgcolor-secondary u-color-white">
-  <div class="u-pl-x6 u-inline-block u-type-small">
-    <span class="u-inline-block u-pr-x8"
-      >default<br />
-      ( >= 0px )</span
-    >
-    <span class="u-hidden u-inline-block@xs u-pr-x8"
-      >XS<br />
-      ( > 640px )</span
-    >
-    <span class="u-hidden u-inline-block@sm u-pr-x8"
-      >SM <br />
-      ( > 768px )</span
-    >
-    <span class="u-hidden u-inline-block@md u-pr-x8"
-      >MD <br />
-      ( > 1024px )</span
-    >
-    <span class="u-hidden u-inline-block@lg u-pr-x8"
-      >LG <br />
-      ( > 1280px )</span
-    >
+<header class="u-fixed u-width">
+  <div
+    class="
+      o-container o-container--fluid
+      u-jc-between u-bgcolor-white u-pv-x4 u-flex
+    "
+  >
+    <img
+      src="https://www.riu.com/fcs_images/riu2017/logo2018-riucom-movil.png"
+      alt=""
+    />
+    <div class="u-pl-x6 u-inline-block u-type-small">
+      <span class="u-inline-block u-pr-x8"
+        >default<br />
+        ( >= 0px )</span
+      >
+      <span class="u-hidden u-inline-block@xs u-pr-x8"
+        >XS<br />
+        ( > 640px )</span
+      >
+      <span class="u-hidden u-inline-block@sm u-pr-x8"
+        >SM <br />
+        ( > 768px )</span
+      >
+      <span class="u-hidden u-inline-block@md u-pr-x8"
+        >MD <br />
+        ( > 1024px )</span
+      >
+      <span class="u-hidden u-inline-block@lg u-pr-x8"
+        >LG <br />
+        ( > 1280px )</span
+      >
+    </div>
+    <button (click)="toggle()" class="u-1/12">
+      <ng-container *ngIf="isInspect; else show">hide</ng-container>
+      <ng-template #show>grid</ng-template>
+    </button>
   </div>
 </header>

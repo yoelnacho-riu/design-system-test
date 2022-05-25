@@ -8,7 +8,9 @@ $token-container-desktop: 1280px;
 
 $iota-container-list: (
   null: $token-size-percentage-full,
-  sm: $token-container-desktop,
+  sm: (
+    $token-container-desktop + ($token-container-gutter-lg* 2),
+  ),
 );
 
 $iota-container-list-extra: (
@@ -17,5 +19,5 @@ $iota-container-list-extra: (
 
 $iota-gutter-list: (
   null: $token-container-gutter-md,
-  xs: $token-container-gutter-lg,
+  xs: $token-container-gutter-lg
 );
