@@ -4,18 +4,18 @@ $token-container-gutter-xs: $token-container-gutter;
 $token-container-gutter-md: ($token-container-gutter * 2);
 $token-container-gutter-lg: ($token-container-gutter * 4);
 $token-container-mobile: 600px;
-$token-container-desktop: 1500px;
+$token-container-desktop: 1280px;
 
 $iota-container-list: (
   null: $token-size-percentage-full,
-  sm: $token-container-desktop
+  sm: $token-container-desktop,
 );
 
 $iota-container-list-extra: (
-  fluid: 100%
+  fluid: 100%,
 );
 
 $iota-gutter-list: (
   null: $token-container-gutter-md,
-  xs: $token-container-gutter-lg
+  xs: $token-container-gutter-lg,
 );

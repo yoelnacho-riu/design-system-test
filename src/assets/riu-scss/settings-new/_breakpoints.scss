@@ -1,7 +1,7 @@
 $breakpoint-mobile: 640px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
-$breakpoint-desktop-large: 1500px;
+$breakpoint-desktop-large: 1280px;
 
 $token-breakpoint-mobile: 'screen and ( min-width: #{$breakpoint-mobile} )';
 $token-breakpoint-tablet: 'screen and ( min-width: #{$breakpoint-tablet} )';
@@ -12,5 +12,5 @@ $iota-breakpoint-list: (
   xs: $token-breakpoint-mobile,
   sm: $token-breakpoint-tablet,
   md: $token-breakpoint-desktop,
-  lg: $token-breakpoint-desktop-large,
+  lg: $token-breakpoint-desktop-large
 );
