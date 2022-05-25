@@ -1,28 +1,5 @@
-<header class="u-text-center u-fixed u-width u-bgcolor-secondary u-color-white">
-  <div class="u-pl-x6 u-inline-block u-type-small">
-    <span class="u-inline-block u-pr-x8"
-      >default<br />
-      ( < 640px )</span
-    >
-    <span class="u-hidden u-inline-block@xs u-pr-x8"
-      >XS<br />
-      ( > 640px )</span
-    >
-    <span class="u-hidden u-inline-block@sm u-pr-x8"
-      >SM <br />
-      ( > 768px )</span
-    >
-    <span class="u-hidden u-inline-block@md u-pr-x8"
-      >MD <br />
-      ( > 1024px )</span
-    >
-    <span class="u-hidden u-inline-block@lg u-pr-x8"
-      >LG <br />
-      ( > 1280px )</span
-    >
-  </div>
-</header>
-<main class="o-container u-pv-x20">
+<app-main-header></app-main-header>
+<main class="o-container u-pv-x16">
   <div class="u-mb-x6">
     <h2 class="u-mb-x4">Page Title</h2>
     <p>
@@ -33,25 +10,26 @@
     </p>
   </div>
   <div class="o-grid">
-    <ng-container *ngFor="let i of [1,1,1,1]">
-    <div class="o-grid__col u-6/12@xs u-4/12@sm u-3/12@md u-mb-x6">
-      <div class="u-size u-flex u-fd-col u-bgcolor-white">
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-s/1a/30/e5/aa/hotel-riu-vallarta.jpg"
-          alt=""
-          class="u-size img-cover"
-        />
-        <div class="u-p-x">
-          <h5>Title</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            provident velit reiciendis blanditiis qui, iure sequi in! Aperiam
-            error quibusdam necessitatibus voluptatem neque possimus, facere,
-            reiciendis consequatur id tempore quas.
-          </p>
+    <ng-container *ngFor="let i of [1, 1, 1, 1]">
+      <!-- <div class="o-grid__col u-6/12@xs u-4/12@sm u-3/12@md u-mb-x6"> -->
+      <div class="o-grid__col u-mb-x3 u-1/4 u-1/6@xs u-1/8@sm">
+        <div class="u-size u-flex u-fd-col u-bgcolor-white">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/1a/30/e5/aa/hotel-riu-vallarta.jpg"
+            alt=""
+            class="u-size img-cover"
+          />
+          <div class="u-p-x4">
+            <h5>Title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              provident velit reiciendis blanditiis qui, iure sequi in! Aperiam
+              error quibusdam necessitatibus voluptatem neque possimus, facere,
+              reiciendis consequatur id tempore quas.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
     </ng-container>
   </div>
 </main>
